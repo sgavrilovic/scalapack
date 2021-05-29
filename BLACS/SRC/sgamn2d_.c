@@ -1,6 +1,10 @@
 #include "Bdef.h"
 
+void BI_TransDist(BLACSCONTEXT *ctxt, char scope, int m, int n, int *rA, int *cA, int ldrc, BI_DistType *dist, int rdest, int cdest);
 
+void BI_svmcopy(int m, int n, float *A, int lda, float *buff);
+
+void BI_smvcopy(int m, int n, float *A, int lda, float *buff);
 
 #if (INTFACE == C_CALL)
 void Csgamn2d(Int ConTxt, char *scope, char *top, Int m, Int n, float *A,

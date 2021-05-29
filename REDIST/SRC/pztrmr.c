@@ -171,6 +171,7 @@
 #define zlacpy_ zlacpy
 #endif
 #define Clacpy Cztrlacpy
+void Cblacs_gridmap(int *ConTxt, int *usermap, int ldup, int nprow0, int npcol0);
 void  Clacpy();
 typedef struct {
   double r, i;

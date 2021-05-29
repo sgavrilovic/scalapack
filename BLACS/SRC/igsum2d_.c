@@ -1,5 +1,9 @@
 #include "Bdef.h"
 
+void BI_ivmcopy(int m, int n, int *A, int lda, int *buff);
+
+void BI_imvcopy(int m, int n, int *A, int lda, int *buff);
+
 
 #if (INTFACE == C_CALL)
 void Cigsum2d(Int ConTxt, char *scope, char *top, Int m, Int n, Int *A,

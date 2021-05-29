@@ -1,4 +1,8 @@
 #include "Bdef.h"
+
+void Cblacs_pinfo(int *mypnum, int *nprocs);
+int Csys2blacs_handle(MPI_Comm SysCtxt);
+
 #if (INTFACE == C_CALL)
 void Cblacs_get(Int ConTxt, Int what, Int *val)
 #else

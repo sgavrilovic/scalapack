@@ -1,5 +1,9 @@
 #include "Bdef.h"
 
+F_VOID_FUNC blacs_gridmap_(int *ConTxt, int *usermap, int *ldup, int *nprow0, int *npcol0);
+
+void Cblacs_gridmap(int *ConTxt, int *usermap, int ldup, int nprow0, int npcol0);
+
 #if (INTFACE == C_CALL)
 void Cblacs_gridinit(Int *ConTxt, char *order, Int nprow, Int npcol)
 #else

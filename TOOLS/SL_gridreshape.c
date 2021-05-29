@@ -4,6 +4,13 @@
 #ifndef Int
 #define Int int
 #endif
+void Cblacs_gridinfo(int ConTxt, int *nprow, int *npcol, int *myrow, int *mycol);
+
+void Cblacs_abort(int ConTxt, int ErrNo);
+
+void Cblacs_get(int ConTxt, int what, int *val);
+
+void Cblacs_gridmap(int *ConTxt, int *usermap, int ldup, int nprow0, int npcol0);
 
 Int SL_Cgridreshape(ctxt, pstart, row_major_in, row_major_out, P, Q)
 Int ctxt, pstart, row_major_in, row_major_out, P, Q;

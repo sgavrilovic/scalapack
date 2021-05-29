@@ -10,6 +10,8 @@
 */
 #include "pblas.h"
 
+F_INTG_FCT  numroc_();
+
 void pzrot_( n, X, ix, jx, desc_X, incx, Y, iy, jy, desc_Y, incy, c, s )
 /*
 *  Mark Fahey

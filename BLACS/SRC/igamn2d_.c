@@ -1,5 +1,12 @@
 #include "Bdef.h"
 
+void BI_TransDist(BLACSCONTEXT *ctxt, char scope, int m, int n, int *rA, int *cA, int ldrc, BI_DistType *dist, int rdest, int cdest);
+
+void BI_ivmcopy(int m, int n, int *A, int lda, int *buff);
+
+void BI_imvcopy(int m, int n, int *A, int lda, int *buff);
+
+
 #if (INTFACE == C_CALL)
 void Cigamn2d(Int ConTxt, char *scope, char *top, Int m, Int n, Int *A,
               Int lda, Int *rA, Int *cA, Int ldia, Int rdest, Int cdest)

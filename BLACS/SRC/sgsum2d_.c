@@ -1,5 +1,9 @@
 #include "Bdef.h"
 
+void BI_smvcopy(int m, int n, float *A, int lda, float *buff);
+
+void BI_svmcopy(int m, int n, float *A, int lda, float *buff);
+
 
 #if (INTFACE == C_CALL)
 void Csgsum2d(Int ConTxt, char *scope, char *top, Int m, Int n, float *A,

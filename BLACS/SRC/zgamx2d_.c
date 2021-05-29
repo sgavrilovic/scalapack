@@ -1,6 +1,10 @@
 #include "Bdef.h"
 
+void BI_dvmcopy(int m, int n, double *A, int lda, double *buff);
 
+void BI_dmvcopy(int m, int n, double *A, int lda, double *buff);
+
+void BI_TransDist(BLACSCONTEXT *ctxt, char scope, int m, int n, int *rA, int *cA, int ldrc, BI_DistType *dist, int rdest, int cdest);
 
 #if (INTFACE == C_CALL)
 void Czgamx2d(Int ConTxt, char *scope, char *top, Int m, Int n, double *A,

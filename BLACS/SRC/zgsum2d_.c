@@ -1,5 +1,9 @@
 #include "Bdef.h"
 
+void BI_dmvcopy(int m, int n, double *A, int lda, double *buff);
+
+void BI_dvmcopy(int m, int n, double *A, int lda, double *buff);
+
 
 #if (INTFACE == C_CALL)
 void Czgsum2d(Int ConTxt, char *scope, char *top, Int m, Int n, double *A,

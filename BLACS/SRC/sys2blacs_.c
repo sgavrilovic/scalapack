@@ -1,5 +1,7 @@
 #include "Bdef.h"
 
+void Cblacs_pinfo(int *mypnum, int *nprocs);
+
 #if (INTFACE == C_CALL)
 Int Csys2blacs_handle(MPI_Comm SysCtxt)
 #else

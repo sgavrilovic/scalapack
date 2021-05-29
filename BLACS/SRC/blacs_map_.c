@@ -1,5 +1,8 @@
 #include "Bdef.h"
 
+void Cblacs_pinfo(int *mypnum, int *nprocs);
+void Cblacs_get(int ConTxt, int what, int *val);
+
 #if (INTFACE == C_CALL)
 void Cblacs_gridmap(Int *ConTxt, Int *usermap, Int ldup, Int nprow0, Int npcol0)
 #else

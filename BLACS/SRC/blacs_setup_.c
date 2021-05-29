@@ -1,5 +1,7 @@
 #include "Bdef.h"
 
+void Cblacs_pinfo(int *mypnum, int *nprocs);
+
 #if (INTFACE == C_CALL)
 void Cblacs_setup(Int *mypnum, Int *nprocs)
 #else
